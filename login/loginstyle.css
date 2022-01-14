@@ -1,0 +1,78 @@
+/*FOR THE HOME PAGE!*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Style for the holistic format of the page*/
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+@keyframes background {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 50%;
+        margin-top: 4rem;
+    }
+    100% {
+        opacity: 100%;
+        margin-top: 0rem;
+    }
+}
+
+
+/* Class that includes the menu's and the school logo */
+
+header {
+    position: relative;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    /* This makes sure that there is a flexible blank space between the menu buttons and the logo*/
+    align-items: center;
+}
+
+label {
+    display: none;
+}
+
+header .logo {
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+/* Hover and click response */
+
+header .navigation a {
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+header .navigation a:not(:last-child) {
+    margin-right: 30px;
+}
+
+header .navigation a:hover {
+    background: #fff;
+}
